@@ -5,35 +5,27 @@ import firebase from "firebase/compat/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-
 // cada produto do firebase deve ser importad separadamente
 //por exemplo auth de autenticação
 import "firebase/compat/auth";
 
 import "firebase/compat/firestore";
 
-
-
-
 // Your web app's Firebase configuration
+// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  
-  apiKey: "AIzaSyC5PpsbnndLOEgEuJv0tnPCCBrAHycaX6k",
+  apiKey: "AIzaSyCK4KVbYLzfSMRHxsqxFlKVkQDllAxOec4",
 
+  authDomain: "primeiro-firebase-598c8.firebaseapp.com",
 
-  authDomain: "diego-expo.firebaseapp.com",
-//
-databaseURL: "https://diego-expo-default-rtdb.firebaseio.com",
+  projectId: "primeiro-firebase-598c8",
 
-//
-projectId: "diego-expo",
+  storageBucket: "primeiro-firebase-598c8.appspot.com",
 
-storageBucket: "diego-expo.appspot.com",
+  messagingSenderId: "313236881369",
 
-messagingSenderId: "60839181686",
-
-appId: "1:60839181686:web:986a38092f30caa32dce57"
-
+  appId: "1:313236881369:web:c46b8730399c6dda1863c8",
 };
 
 // Initialize Firebase
@@ -41,9 +33,9 @@ let app;
 if (firebase.apps.length === 0) {
   app = firebase.initializeApp(firebaseConfig);
 } else {
-  app = firebase.app()
+  app = firebase.app();
 }
 
-const auth = firebase.auth()
-const firestore = firebase.firestore()
+const auth = firebase.auth();
+const firestore = firebase.firestore();
 export { auth, firestore };
